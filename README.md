@@ -1,165 +1,85 @@
 https://docs.google.com/document/d/1mXl8M0MTw8agD3PbDZvJOGalqqSIu2zdyWpHRrXbj48/edit?tab=t.0
 
-
 Pod Name: Capstone Plan
-How to use this doc
-One person in your pod makes a copy: File > Make a copy. Name it <your pod name> Capstone Plan.
-Share the copy with everyone in your pod as Editor, and with your teacher.
-Each of you finishes your own planning activities in the course first: the sentence, the persona, the scope, the table, and the system explanation.
-Paste your own answers into your section under Our answers, and add a photo of your wireframe.
-Together, fill in Our merged plan if your team builds one app, or Pod review if each of you builds your own app. Delete the one you do not use.
-Put this doc's link in your README, under Team.
 
-Our pod
-Name
+Our pod: No Team
+Name Donald Ross
 GitHub handle
-App name
+App name Ross Gallery Wall
 
-
-
-We are: a team building one app  /  a pod building our own apps (delete one)
-
-
+a single pod building my own apps (delete one)
 
 Our answers
-One section each. Paste your answers from the course, then copy this section for the next person.
+
 Name:
 The sentence
-A ______ needs ______ because ______. My app will ______.
+A **\_\_** needs **\_\_** because **\_\_**. My app will \_all people who are interested in art painting video to watch and recieve inspiration how to create art paintings**\_**.
 Persona
 Name and situation
 
+ross art gallery
 
-Frustration
+Frustration a little styling and filtering
 
-
-Goal
-
+Goal Allow visitors and account users to view or upload info of art using name and email
 
 When they'd open the app
 
-
+It will be the home page the consist of the option to submit email and art video selection from bob ross
 
 Scope
 In this version
 Left out, and why
-1. Ex: A visitor sees the list of meals.
-Ex: Users can create potluck events.
-2. Ex: A visitor adds a meal row.
 
+1. Ex: A visitor sees the list of meals.
+   Ex: Users can create potluck events.
+2. Ex: A visitor adds a meal row.
 
 3. Ex: A visitor can delete a row.
 
-
-
 The table
 Table name:
 Column
 Type
 Example value
 
+The tables (Supabase)
+bob_ross_paintings
+100 rows, one per episode, from FiveThirtyEight's Bob Ross "elements by episode" dataset. The page loads the first 20, sorted by id.
 
+Column Type Example
+id int8, primary key 1
+EPISODE text S01E01
+TITLE text A WALK IN THE WOODS
+
+inquiries
+Column Type Example
+id int8, primary key 1
+created_at timestamptz 2026-11-23 00:00
+email text fan@example.com
+painting_id int8, links to bob_ross_paintings.id
 
 System explanation
-The visitor
 
+The visitor
 
 The app
 
+The visitor sees: the home, about and contact page
 
-The visitor sees
+While loading: runs loadPaintings once, as soon as the page opens
 
+If nothing matches: visitor has to select an option from drop down
 
-While loading
-
-
-If nothing matches
-
-
-If it fails
-
-
+If it fails try again
 
 Wireframe
 Insert > Image: a photo of your drawing, or an Excalidraw export.
-Our merged plan
-For a team building one app. Read everyone's answers, then agree on one version of each piece.
-The sentence
-A ______ needs ______ because ______. Our app will ______.
-Persona
-Name and situation
-
-
-Frustration
-
-
-Goal
-
-
-When they'd open the app
-
-
-
-Scope
-In this version
-Left out, and why
-1. A visitor sees the list.
-
-
-2. A visitor adds a row.
-
-
-3.
-
-
-
-The table
-Table name:
-Column
-Type
-Example value
-Ex: meal_name
-text
-“Pastalaya”
-Ex: meal_calories
-
-
-
-
-Ex: serves
-
-Table name:
-Column
-Type
-Example value
-
-
-System explanation
-The visitor
-
-
-The app
-
-
-The visitor sees
-
-
-While loading
-
-
-If nothing matches
-
-
-If it fails
-
-
 
 Pod review
 For a pod where each of you builds your own app. Each of you reads one pod-mate's answers and fills in their row.
-Plan by
-Read by
-One thing that is clear
+Plan by Donald Ross
+Read by Donald Ross
+One thing that is clear: art page
 One question
 Plan check
-
-Plan check: every In this version line has a box on the wireframe, and every labeled box has a column in the table. Write yes, or what is missing.

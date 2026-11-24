@@ -1,9 +1,9 @@
 function PaintingCard({ painting }) {
   return (
-    <div>
+    <div className="card">
       <h2>{painting.title}</h2>
       <p>
-        {painting.episode_code} · {painting.style}
+        Season {painting.season}, Episode {painting.episode}
       </p>
     </div>
   );
