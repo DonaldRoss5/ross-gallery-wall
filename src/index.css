@@ -52,6 +52,12 @@
 
 body {
   margin: 0;
+  padding: 0;
+
+  background-image: url("/background.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
 }
 
 #root {
@@ -72,6 +78,10 @@ h2 {
   font-weight: 500;
   color: var(--text-h);
 }
+h1,
+.card h2 {
+  color: blue;
+}
 
 h1 {
   font-size: 56px;
@@ -82,6 +92,10 @@ h1 {
     margin: 20px 0;
   }
 }
+.home h1 {
+  font-size: 30px;
+}
+
 h2 {
   font-size: 24px;
   line-height: 118%;
@@ -108,4 +122,136 @@ code {
   line-height: 135%;
   padding: 4px 8px;
   background: var(--code-bg);
+}
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px;
+}
+
+.navbar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  border: 1px solid #b71c1c;
+  background-color: #d32f2f;
+}
+
+.navbar li a {
+  display: block;
+  color: #ffffff;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.navbar li a:hover:not(.active) {
+  background-color: #b71c1c;
+}
+
+.navbar li a.active {
+  background-color: #04aa6d;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100svh;
+}
+
+.footer {
+  margin-top: auto;
+  padding: 14px 16px;
+  border: 1px solid #e7e7e7;
+  background-color: #f3f3f3;
+  color: #666666;
+  font-size: 14px;
+}
+
+.footer p {
+  margin: 0;
+}
+
+.home {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  justify-content: flex-start;
+  padding-top: 24px;
+}
+
+.home h1,
+.home h2,
+.home p {
+  margin: 0;
+}
+
+.home .inquiry-form {
+  justify-content: center;
+}
+
+.ask {
+  margin: auto 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.ask h2,
+.about-box p,
+.contact-box p {
+  font-size: 25px;
+  font-weight: 700;
+  font-family: Georgia, serif;
+  color: #04aa6d;
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+.ask .inquiry-form {
+  font-size: 18px;
+  margin-top: 0;
+}
+
+.ask .inquiry-form input,
+.ask .inquiry-form select,
+.ask .inquiry-form button {
+  font-size: 18px;
+  font-family: Georgia, serif;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 320px;
+}
+
+.flex-container input,
+.flex-container select,
+.flex-container button {
+  padding: 8px;
+  font-size: 16px;
+}
+
+.heading-box {
+  background-color: rgba(255, 255, 255, 0.85);
+  border: 2px solid #5d4037;
+  border-radius: 12px;
+  padding: 16px 24px;
+  max-width: 400px;
+  margin: 0 auto 80px;
+}
+
+.home > h2 {
+  color: #b5654c;
+}
+.message {
+  color: #d32f2f;
+  font-weight: 700;
 }
